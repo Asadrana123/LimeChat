@@ -1,0 +1,128 @@
+.hero-section {
+    text-align: center;
+    color: #000;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-image-container{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .hero-image {
+    width: 100%;
+    border-radius: 1rem;
+  }
+  
+  .hero-content {
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  
+  .hero-content h1 {
+    font-family: Overused Grotesk, Arial, sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  
+  .hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+    color: #67707b;
+    font-family: Inter,Arial,sans-serif;
+  }
+  
+  .hero-button-demo-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: rgb(88, 88, 224);
+    color: #0a0d14;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    max-height: 3rem;
+    min-height: 3rem;
+    padding: .38rem .38rem .38rem 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 4rem;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.hero-button-margin-icon {
+    margin-left: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.hero-button-margin-icon.rotate {
+    transition: all .3s ease-in-out;
+    rotate: 180deg;
+}
+
+.hero-button-arrow-icon {
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    background-color: white;
+    border-radius: 50%;
+    color: #0a0d14;
+    overflow: hidden;
+    position: relative;
+    transition: all .3s linear;
+}
+
+.hero-button-next-icon {
+    transition: all .3s linear;
+}
+
+.hero-button-previous-icon {
+    position: absolute;
+    transform: translateX(-30px);
+    transition: all .3s linear;
+}
+
+.hero-button-demo-button:hover .hero-button-arrow-icon {
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.hero-button-demo-button:hover .hero-button-previous-icon {
+    transform: translateX(0px);
+}
+
+.hero-button-demo-button:hover .hero-button-next-icon {
+    position: relative;
+    transform: translateX(30px);
+}
+
+.hero-button-arrow-icons-container {
+    height: 40px;
+    width: 40px;
+    max-height: 40px;
+    max-width: 40px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 1.5em;
+    }
+  
+    .hero-content p {
+      font-size: 1em;
+    }
+  
+   
+  }
+  
